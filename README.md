@@ -16,3 +16,5 @@ Exercises of JavaScript for beginners(?)
 **注意**
 - フォルダ名は本名でもニックネームでもハンドルネームでもstudentNNでも好きにしてください（公開されることには注意）
 - 自分のファイル以外を更新したい場合（このREADME.mdやoriginalsフォルダ内のファイル）は，gitでブランチを切ってpushし，pullリクエストを出してください。
+
+Gitの設定については，[prepare_git.md](./prepare_git.md) をご参照ください。
