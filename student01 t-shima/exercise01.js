@@ -20,3 +20,9 @@ export function q02(){
     }
     console.log(arr);
 }
+
+export function q06() {
+    //ボタン押す前提でよい？
+    let inp = document.getElementById('input1').value;
+    document.getElementById('q06_box').innerText = inp;
+}
