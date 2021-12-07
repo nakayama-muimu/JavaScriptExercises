@@ -26,3 +26,23 @@ export function q06() {
     let inp = document.getElementById('input1').value;
     document.getElementById('q06_box').innerText = inp;
 }
+
+export function q08(){
+    // let inp2 = parseInt(document.getElementById('input1').value);
+    // let ans2 = inp2.toString(2);
+    // console.log(ans2);
+    let arr = [];
+    let inp = parseInt(document.getElementById('input1').value);
+    if (inp !== 0) {
+        while (inp > 0) {
+            let sur = inp % 2;
+            inp = Math.floor(inp / 2);
+            arr.unshift(sur);
+        }
+    }
+    let sen = "";
+    for (let i = 0; i < arr.length; i++){
+        sen = sen + arr[i];
+    }
+    console.log(sen);
+}
