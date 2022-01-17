@@ -20,6 +20,37 @@ export function q02(){
     }
     console.log(arr);
 }
+export function q02a(){
+    // console.log([7, 14, 21, 28, 35, 42, 49]);
+    let arr = [];   // 配列初期化
+    let i = 1;  // 初期値１
+    let ans = 0;    // 初期値0
+    while (i < 10000) {
+        //ループ ()内が成立する内はループを実行する 49でもOK  true は常に正なので常にループ(無限ループ) 
+        // i < 10000 無限じゃなくて10000で終わらせる保険的な書き方 ans<50 or true
+        ans = i * 7;    // ans 1*7=7, 2*7=14, 3*7=21 ...    8*7=56
+        if (ans >= 50) {  //50以上だったら
+            break;          // break ループを止めてループを抜ける 56の時抜ける
+        }
+        arr.push(ans);  //配列を追加 7,14,21,28,...,49
+        /*  7に7を足していく方法もあり
+        i += 7; //i = i + 7; i -= 7; i *= 7; etc...
+        */
+        i += 1; // iに1を足してiに格納  2,3,4...,7,8
+    }
+    console.log(arr);
+}
+
+export function q05() {
+    // Math.sin サインの計算
+    // PI → π
+    // x° = x * π / 180 ラジアン
+    let ans = 0;
+    for (let i = 1; i <= 90; i++) {
+        ans = Math.sin(i * (Math.PI / 180));
+        console.log(ans);
+    }
+}
 
 export function q06() {
     //ボタン押す前提でよい？
