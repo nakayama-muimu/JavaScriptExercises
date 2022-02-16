@@ -77,3 +77,65 @@ export function q08(){
     }
     console.log(sen);
 }
+
+export function q11() {
+    let a = 1;
+    if (a) {
+        console.log('a is true');
+    } else {
+        console.log('a is false');
+    }
+    let b = 0;
+    if (b) {
+        console.log('b is true');
+    } else {
+        console.log('b is false');
+    }
+}
+
+export function q12() {
+    let a = 'true';
+    if (a) {
+        console.log('a is true');
+    } else {
+        console.log('a is false');
+    }
+    let b = 'false';
+    if (b) {
+        console.log('b is true');
+    } else {
+        console.log('b is false');
+    }
+}
+
+export function q13() {
+    let a = document.getElementById('input2').value;
+    let y = a.substr(0, 4);
+    let m = a.substr(5, 2);
+    let d = a.substr(8, 2);
+    let b = y + '年' + m + '月' + d + '日';
+    console.log(b);
+}
+
+export function q17() {
+    let a = document.getElementById('input2').value;
+    let y = a.substr(0, 4);
+    let m = a.substr(5, 2);
+    let d = a.substr(8, 2);
+    let b = new Date(y + '/' + m + '/' + d);
+    //console.log(nb);
+    let n = new Date();
+    let ny = n.getFullYear();
+    let nm = n.getMonth() + 1;
+    let nd = n.getDate();
+    n = new Date(ny + '/' + nm + '/' + nd);
+    //console.log(n);
+    if (n > b) {
+        console.log('今年の誕生日はまだ来ていません');
+    } else {
+        console.log('今年の誕生日は過ぎています');
+    }
+}
+
+
+
