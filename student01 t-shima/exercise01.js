@@ -20,6 +20,7 @@ export function q02(){
     }
     console.log(arr);
 }
+
 export function q02a(){
     // console.log([7, 14, 21, 28, 35, 42, 49]);
     let arr = [];   // 配列初期化
@@ -79,33 +80,43 @@ export function q08(){
 }
 
 export function q11() {
-    let a = 1;
-    if (a) {
-        console.log('a is true');
+    let a = '1';
+    if (a !== 1) {
+        console.log('a is true'); //正解
     } else {
         console.log('a is false');
     }
-    let b = 0;
-    if (b) {
+    let b = '0';
+    if (b !== 0) {
         console.log('b is true');
     } else {
-        console.log('b is false');
+        console.log('b is false'); //正解
+    }
+    let c = '-1';                     //たまに関数の変数で-1を返す時に出てくる
+    if (c !== -1) {
+        console.log('c is true');
+    } else {
+        console.log('c is false');
     }
 }
 
 export function q12() {
     let a = 'true';
-    if (a) {
+    if (a === true) {
         console.log('a is true');
     } else {
         console.log('a is false');
     }
     let b = 'false';
-    if (b) {
+    if (b === false) {
         console.log('b is true');
     } else {
         console.log('b is false');
     }
+    // NaN　数値がはいるべき所に数値が入ってないときのエラー  Not a Number
+    // null　存在しない値が入ってくるとき
+    // undefined
+    // Infinity
 }
 
 export function q13() {
