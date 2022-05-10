@@ -153,3 +153,75 @@ export function q08(){
     }
     console.log(sen);
 }
+
+export function q11() {
+    let a = '1';
+    if (a !== 1) {
+        console.log('a is true'); //正解
+    } else {
+        console.log('a is false');
+    }
+    let b = '0';
+    if (b !== 0) {
+        console.log('b is true');
+    } else {
+        console.log('b is false'); //正解
+    }
+    let c = '-1';                     //たまに関数の変数で-1を返す時に出てくる
+    if (c !== -1) {
+        console.log('c is true');
+    } else {
+        console.log('c is false');
+    }
+}
+
+export function q12() {
+    let a = 'true';
+    if (a === true) {
+        console.log('a is true');
+    } else {
+        console.log('a is false');
+    }
+    let b = 'false';
+    if (b === false) {
+        console.log('b is true');
+    } else {
+        console.log('b is false');
+    }
+    // NaN　数値がはいるべき所に数値が入ってないときのエラー  Not a Number
+    // null　存在しない値が入ってくるとき
+    // undefined
+    // Infinity
+}
+
+export function q13() {
+    let a = document.getElementById('input2').value;
+    let y = a.substr(0, 4);
+    let m = a.substr(5, 2);
+    let d = a.substr(8, 2);
+    let b = y + '年' + m + '月' + d + '日';
+    console.log(b);
+}
+
+export function q17() {
+    let a = document.getElementById('input2').value;
+    let y = a.substr(0, 4);
+    let m = a.substr(5, 2);
+    let d = a.substr(8, 2);
+    let b = new Date(y + '/' + m + '/' + d);
+    //console.log(nb);
+    let n = new Date();
+    let ny = n.getFullYear();
+    let nm = n.getMonth() + 1;
+    let nd = n.getDate();
+    n = new Date(ny + '/' + nm + '/' + nd);
+    //console.log(n);
+    if (n > b) {
+        console.log('今年の誕生日はまだ来ていません');
+    } else {
+        console.log('今年の誕生日は過ぎています');
+    }
+}
+
+
+
