@@ -20,6 +20,82 @@ export function q02(){
     }
     console.log(arr);
 }
+
+export function q03(){
+    let d = new Date(2021,10,0);
+    let y = d.getFullYear();
+    let m = d.getMonth();
+    let ar = [];
+    console.log(y+'年'+(m+1)+'月');
+    for (let i = 1;i<=d.getDate();i++){
+        ar.push(new Date(y,m,i));
+    }
+
+    let ar2 = [];
+    for(let j of ar){
+        ar2.push(j.getDate());
+        if(j.getDay() === 6){
+            console.log(ar2);
+            ar2 = [];
+        }
+    }
+    console.log(ar2);
+
+}
+
+export function q04a(){
+    let d = new Date(); //現在時刻
+    console.log(d);
+    console.log(d.getFullYear());
+    console.log(d.getMonth());  // 月：0から11
+    console.log(d.getDate());   // 日付：
+    console.log(d.getDay());    // 曜日
+    console.log(d.getHours());  //  
+    console.log(d.getMinutes());// 分 
+    console.log(d.getSeconds());// 秒 
+    console.log(d.getMilliseconds());
+}
+
+export function q04b(){
+    let d = new Date(2022,2,24,20,0,0); //現在時刻
+    console.log(d);
+    console.log(d.getFullYear());
+    console.log(d.getMonth());  // 月：0から11
+    console.log(d.getDate());   // 日付：
+    console.log(d.getDay());    // 曜日
+    console.log(d.getHours());  //  
+    console.log(d.getMinutes());// 分 
+    console.log(d.getSeconds());// 秒 
+    console.log(d.getMilliseconds());
+}
+
+export function q04c(){
+    let d1 = Date.now();
+    let d = new Date(); //現在時刻
+    console.log(d);
+    console.log(d.getFullYear());
+    console.log(d.getMonth());  // 月：0から11
+    console.log(d.getDate());   // 日付：
+    console.log(d.getDay());    // 曜日
+    console.log(d.getHours());  //  
+    console.log(d.getMinutes());// 分 
+    console.log(d.getSeconds());// 秒 
+    console.log(d.getMilliseconds());
+    let d2 = Date.now();
+    console.log(d1,d2);
+}
+
+export function q04d(){
+    let d = new Date(); //現在時刻
+    console.log(d);
+    console.log(d.toDateString());
+    console.log(d.toLocaleDateString()); 
+    console.log(d.toLocaleString()); 
+    console.log(d.toTimeString());
+    console.log(d.toLocaleTimeString());
+}
+
+
 export function q02a(){
     // console.log([7, 14, 21, 28, 35, 42, 49]);
     let arr = [];   // 配列初期化
