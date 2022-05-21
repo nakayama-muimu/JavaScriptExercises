@@ -134,6 +134,16 @@ export function q06() {
     document.getElementById('q06_box').innerText = inp;
 }
 
+export function q07(){
+    let inpp = document.getElementById('input1').value;
+    if(inpp !== "" && !isNaN(inpp)){
+        let one = Math.floor(parseInt(inpp) % 10);
+        console.log(one);
+      } else {
+        console.log("数値ではありません");
+      }
+}
+
 export function q08(){
     // let inp2 = parseInt(document.getElementById('input1').value);
     // let ans2 = inp2.toString(2);
